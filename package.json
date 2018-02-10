@@ -10,6 +10,7 @@
   "main": "./index.js",
   "scripts": {
     "build": "npm run clean && ./node_modules/.bin/babel src -d lib",
+    "testDebug": "DEBUG=x-db-oplog* npm test",
     "lint": "./node_modules/.bin/xo",
     "prepare": "npm run build",
     "clean": "rm -rf lib/",
@@ -48,6 +49,13 @@
     ],
     "ignores": [
       "test/**"
+    ],
+    "globals": [
+      "afterEach",
+      "describe",
+      "before",
+      "after",
+      "it"
     ],
     "rules": {
       "object-curly-spacing": 0,

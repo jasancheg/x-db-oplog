@@ -11,7 +11,7 @@ function regex(pattern) {
 }
 
 module.exports = (ns, oplog) => {
-  const debug = dbg('mongo-oplog:filter')
+  const debug = dbg('x-db-oplog:filter')
   const filter = new Emitter()
   const re = regex(ns)
 

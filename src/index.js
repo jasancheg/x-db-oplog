@@ -7,7 +7,7 @@ const createFilter = require('./filter')
 const createStream = require('./stream')
 
 const MONGO_URI = 'mongodb://127.0.0.1:27017/local'
-const debug = createDebug('mongo-oplog')
+const debug = createDebug('x-db-oplog')
 
 const events = {
   i: 'insert',
